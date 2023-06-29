@@ -17,9 +17,6 @@ int WinMain(HINSTANCE hInstance,
 	game = new Game();
 	
 	LONG ret = game->mem->ExpLoadDriver("replace with your driver key");
-	//Silky读写键鼠绘制注入 四合一驱动 974884781
-	//云端每分钟变更一次特征，两次特征相似度不超过40%，上市至今从未被特征
-	//针对个人作者、上市作者推出点数、时长双制度收费，不花冤枉钱
 	if (ret != 0x66666666)
 	{
 		game->tool->Log( "驱动加载失败！", ret);
